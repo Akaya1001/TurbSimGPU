@@ -1,0 +1,28 @@
+# build output
+build/
+*.o
+turbsim/gpu/tests/bau/
+turbsim/gpu/tests/t0_gpu
+turbsim/gpu/tests/t1_chol
+turbsim/gpu/tests/*.hipv4-*
+turbsim/gpu/tests/*.host-*
+
+# TurbSim / runner output (keep the example inputs)
+*.bts
+*.sum
+*.wnd
+*.twr
+*.hh
+*.gpu.log
+*.gpu.ok
+V.bin
+sensoren_*.csv
+bericht_*.txt
+windfelder_gpu/
+out/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/

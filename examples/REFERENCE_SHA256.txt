@@ -1,0 +1,14 @@
+# SHA-256 of the .bts DATA BLOCK (header skipped: it carries a timestamp), computed with turbsim/bts_sha256.py.
+# Reference = stock TurbSim from OpenFAST v3.5.3 (Release, DOUBLE_PRECISION=ON, OpenBLAS dpptrf), gfortran 13.3, glibc 2.39,
+# x86-64 (Ubuntu 24.04). Every example below was reproduced bit for bit by the GPU build (TS_GPU=nur) on an AMD Radeon
+# AI PRO R9700 (gfx1201, ROCm 7.2). farm_low/farm_high: reference produced by the patched CPU build, which was verified
+# against stock-produced campaign boxes (V-dump and .bts).
+#
+# sha256                                                            data bytes  example
+5527e89371d99f3e8b594025d011d65cfdb00501cfd15ad9089d4f059529ef11      21248850  std120/WS_11_TI_12_Seed_1.inp
+292d8b2bc745b8b267851f6608e9d4a30ce517c64d3f99612f2d6edb967a517b      27895560  w340_120/WS_11_TI_12_Seed_1_W340.inp
+d7b1867291dd97f6038d38a1d13ab44272d9c72c9d4f7a67ad67c1340f81238a     107961840  w960_120/WS_11_TI_12_Seed_1_W960.inp
+e70b741ed6de342075e09cbfed8219903b411baf42bb4ef4ae78e7ad27634f08       1216152  farm_low/Low.inp
+46bd7b36f8a6123a5fbfa18d92a8f9f2fe3bfb876c37698cd3232de9a26d65a4      16152312  farm_high/HighT1.inp
+84eee0e4ae24c3233e065d35340737cd1858e617f3233ff464c095cc43f443d6     639450000  std_full/WS_9_TI_12_Seed_1.inp
+2249919431d8f3afc30119871754b238447f68cd347084788ebdbfdd590ed667    2295321840  w960_full/WS_11_TI_12_Seed_1_W960.inp

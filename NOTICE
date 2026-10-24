@@ -1,0 +1,9 @@
+TurbSimGPU
+Copyright 2026 Akaya1001
+
+This project contains build scripts, source patches and accelerator kernels for TurbSim, the stochastic inflow
+turbulence generator of OpenFAST (https://github.com/OpenFAST/openfast), Copyright National Renewable Energy
+Laboratory, licensed under the Apache License, Version 2.0.
+
+No OpenFAST source code is redistributed here: the patches are applied at build time to a separately obtained
+OpenFAST v3.5.3 source tree. The example TurbSim input files under examples/ were written for this project.
